@@ -1,0 +1,12 @@
+<ion-content>
+  <ion-list>
+    <ion-item detail="true" detail-icon="caret-forward-circle" *ngFor="let item of (list$|async)">
+
+      
+      <ion-thumbnail slot="start">
+        {{item.id}}
+      </ion-thumbnail>
+      <ion-label>{{item.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
